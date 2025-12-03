@@ -54,7 +54,7 @@ jobs:
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4FD6FF1C435A46E3B0E4B6969BEAA486 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F8048CF7EDA64194887CF984922A4B03 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_63B97EF453884C32BBCBFFAF9917CB75 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_babcf984-ebaf-4259-a489-aa3c368ea0ed }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
@@ -63,4 +63,5 @@ jobs:
           app-name: 'cloudtest'
           slot-name: 'Production'
           package: .
+
           
